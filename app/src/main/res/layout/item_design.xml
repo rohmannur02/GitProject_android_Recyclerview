@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:background="@color/white">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageview"
+        app:cardCornerRadius="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/picis"
+            android:scaleType="centerCrop"
+            android:id="@+id/picis1"/>
+
+    </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/txt_picisan"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/imageview"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Picisan"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtpicisan_time"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/txt_picisan"
+            android:text="10:43Am"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txtpicisan_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/txt_picisan"
+            android:layout_marginStart="20dp"
+            android:layout_toRightOf="@+id/imageview"
+            android:text="Mampus kau di telan sepi"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtpicisan_divider"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/imageview"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="-5dp"
+            android:layout_toRightOf="@+id/imageview"
+            android:text="----------------------------------------------------"
+            android:textColor="#CDC7C7"
+            android:textSize="16sp" />
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
